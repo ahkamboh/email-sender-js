@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sign-up and login Form in tailwind</title>
+  <link rel="stylesheet" href="input.css">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="icon" href="ahkambohlogo.png">
+</head>
+<body>  
+<h1 class="font-extrabold text-center absolute top-[20%] left-[50%] translate-x-[-50%] text-[#666887]" >Email sender Form</h1>
+  <form onsubmit="sendEmail(); reset(); return false;" class=" px-3 h-screen grid justify-center items-center">
+    <div class=" grid gap-6    " id="form">
+      <div class=" w-full flex gap-3   ">
+        <input
+          class=" glass  capitalize shadow-2xl p-3 ex w-full outline-none focus:border-solid focus:border-[1px] border-[#820059] placeholder:text-white     "
+          type="text" placeholder=" First Name" id="First-Name" name="First-Name" required>
+        <input
+          class="p-3 capitalize shadow-2xl  glass w-full placeholder:text-white outline-none focus:border-solid focus:border-[1px] border-[#820059]  "
+          type="text" placeholder="Last Name" id="Last-Name" name="Last-Name">
+      </div>
+      <div class="grid gap-6 w-full ">
+        <input
+          class="p-3 shadow-2xl lowercase glass w-full placeholder:text-white outline-none focus:border-solid border-[#820059] focus:border-[1px]    "
+          type="Email" placeholder="Email" id="email" name="email">
+        <input
+          class="p-3 shadow-2xl  glass w-full text-white outline-none focus:border-solid focus:border-[1px]border-[#820059]    "
+          type="date" id="dob" name="dob" required>
+      </div>
+      <div class=" flex gap-3 ">
+        <input
+          class="p-3 glass shadow-2xl  w-full placeholder:text-white outline-none focus:border-solid focus:border-[1px] border-[#820059]     "
+          type="password" placeholder="Password"  id="password" name="password" required>
+        <input
+          class="p-3 glass shadow-2xl  w-full placeholder:text-white outline-none focus:border-solid focus:border-[1px] border-[#820059]   "
+          type="password" placeholder="Confirm password" required>
+      </div>
+      <button
+        class="outline-none glass shadow-2xl  w-full p-3  bg-[#ffffff42]  hover:border-solid hover:border-[1px]  hover:text-[#820059] font-bold"
+        type="submit">Submit</button>
+
+    </div>
+
+  </form>
+  <script src="https://smtpjs.com/v3/smtp.js"> </script>
+  <script src="javascript.js" async>
+   
+  </script>
+</body>
+
+
+</html>
