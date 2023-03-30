@@ -1,5 +1,5 @@
 # email-sender-js
-<p align="left"> <img src="https://komarev.com/ghpvc/?username=ahkamboh&label=repository%20views&color=0e75b6&style=flat" alt="ahkamboh" /> </p>
+<p align="left"> <img src="https://komarev.com/ghpvc/?username=ahkamboh&label=Repository%20views&color=0e75b6&style=flat" alt="ahkamboh" /> </p>
  
 
 
