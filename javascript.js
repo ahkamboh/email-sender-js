@@ -4,19 +4,8 @@
     }
     function sendEmail() {
       let FirstName = document.getElementById("First-Name").value;
-      let lastName = document.getElementById("Last-Name").value;
-      let email = document.getElementById("email").value;
-      let dob = document.getElementById("dob").value;
-      let password = document.getElementById("password").value;
 
-       Email.send({
-        Host: "smtp.elasticemail.com",
-        Username: "hi@alihamzakamboh.com",
-        Password: "***REMOVED***",
-        To: email,
-        From: 'hi@alihamzakamboh.com',
-        Subject: "Thanks " + FirstName+ "-"+lastName,
-        Body: "Hi,"+FirstName + "&nbsp;"+lastName +" Thanks for joining ahkamboh 😊"+"<br>"+" Your Date of Birth is : "+dob+"<br>"+"Your Password is:"+password
-      }).then(
-         alert("Thanks "+FirstName+" For joining Kamboh div 😊. Check email box for details that your submit now"));
+      // Demo only: no email is sent and nothing leaves this page.
+      // The date of birth and password fields are never read, stored or sent.
+      alert("Demo only - nothing is sent. Thanks " + FirstName + " for trying the form.");
     }
